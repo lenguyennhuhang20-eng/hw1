@@ -3,16 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點推薦</title>
 	<style>
 		.container {margin: 0 auto; width: 1024px;}
  		.large_font {font-size:30px;}
  		td {text-align: center;}
  		img{border-radius: 30px;}
  		.img_round{border-radius: 50%; width:350px;height:350px;}
+        .rounded_corner {border-radius: 30px;}
+
+ 			/* The navigation bar */
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fixed; /* Set the navbar to fixed position */
+	  top: 0; /* Position the navbar at the top of the page */
+	  width: 100%; /* Full width */
+	}
+
+	/* Links inside the navbar */
+	.navbar a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	/* Change background on mouse-over */
+	.navbar a:hover {
+	  background: #ddd;
+	  color: black;
+	}
+
 	</style>
 </head>
 <body>
+	<div class="navbar">
+  <a href="#home">回首頁</a>
+  <a href="#s1">台中國家歌劇院</a>
+  <a href="#s2">臺中州廳</a>
+  <a href="#s3">審計新村</a>
+</div>
+
 
 <div class="container">
  	<table>
@@ -26,10 +60,13 @@
 	<tr>
 	<td colspan="2">
 	
-     	臺中市
+     	<div class="large_font">臺中市</div>
+     		<img src="00.jpeg">
+
+
 
     	臺中市，通稱臺中，簡稱「中」，為中華民國直轄市，臺灣六都之一，也是中臺灣唯一的直轄市。周邊與臺灣省的六個縣相鄰，北鄰苗栗縣、新竹縣，南鄰彰化縣、南投縣，東隔中央山脈與花蓮縣相鄰，東北以中央山脈和雪山山脈毗鄰宜蘭縣，西臨臺灣海峽。
-   	<img src="00.jpeg">
+  
 
 	
 	</td>
@@ -37,7 +74,7 @@
 	</tr>
 	<tr>
 		<td>
-	<img class="img_round" src="01.jpeg">
+	<img id="s1" class="img_round" src="01.jpeg">
 		</td>	
 		<td>
 		<div class="large_font">台中國家歌劇院</div>
@@ -60,14 +97,14 @@
 		所在位置：台中市西區民權路99號
 	</td>	
 	<td>
-		<img class="img_round" src="02.jpeg">
+		<img id="s2" class="img_round" src="02.jpeg">
 
 	</td>
 	
 	</tr>
 	<tr>
 	<td>
-		<img class="img_round" src="03.jpeg">
+		<img id="s3" class="img_round" src="03.jpeg">
 	</td>
 	<td>
 		<div class="large_font">審計新村</div>
@@ -78,6 +115,16 @@
 		所在位置：台中市西區民生路368巷
 	</td>	
 	</tr>
+	 <td colspan="2">
+	 	<br>
+	 	<br>
+	 	<br>
+	 	<iframe class="round_corner" frameborder ="0"src="https://www.google.com/maps/d/embed?mid=1iDEvJJTQnImqHu6TTHZyD1dfTIM2vjY&ehbc=2E312F" width="1024"height="800"></iframe>
+	 
+	 	
+
+
+
 </div>
 </body>
 </html>
